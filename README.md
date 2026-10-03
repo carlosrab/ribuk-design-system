@@ -56,7 +56,8 @@ Ribuk is bold and playful: a sturdy grass green against near-black ink, a pale m
 - Components are plain HTML elements with `rb-` classes from `components/bundle.css`. Load `tokens.css` first, then `bundle.css`. The CSS covers the look and every state; your Svelte code supplies behaviour (opening dialogs, cycling poll answers, changing scores) by toggling the attributes each README names.
 - Basics: Button, Input, Card, Tag & sticker.
 - Forms: Checkbox & radio, Switch, Select, Segmented control.
-- Feedback: Alert, Toast, Dialog.
+- Navigation: Nav bar (with the live indicator and count bubble), Tab bar.
+- Feedback: Alert, Toast, Dialog, Empty state, Loading.
 - Scores: Leaderboard, Team badge, Score stepper, Stat tile, Progress, Day tracker.
 - Invite: Invite card, Calendar, Date poll.
 - Build screens from these before writing new styles, and keep new styles on the same tokens.

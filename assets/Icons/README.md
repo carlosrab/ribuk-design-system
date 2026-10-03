@@ -15,4 +15,6 @@ Ribuk uses Lucide icons: rounded 24px line icons drawn with a 2px stroke. These 
 | `calendar`, `clock`, `map-pin` | Invite details |
 | `chevron-left`, `chevron-right`, `chevron-down` | Calendar paging, dropdowns |
 | `circle-check`, `info`, `triangle-alert` | Alerts and toasts |
-| `trophy`, `users` | Leader, teams and players |
+| `trophy`, `users` | Leader, teams and players; empty states |
+| `menu`, `house`, `circle-user` | Nav bar menu button, tab bar |
+| `search`, `wifi-off`, `rotate-cw` | Empty states: no results, offline, try again |

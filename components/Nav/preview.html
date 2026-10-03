@@ -1,0 +1,69 @@
+<!-- @dsCard group="Navigation" height=425 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nav bar</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+  .phones { display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: flex-start; }
+  .phone { width: 360px; max-width: 100%; border: 2px solid var(--line); border-radius: var(--radius-md); overflow: hidden; }
+  .cap { margin: 0 0 var(--space-1); font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="demo">
+  <div>
+    <p class="cap">Wide</p>
+    <header class="rb-nav">
+    <a class="rb-nav__brand" href="#">Ribuk</a>
+    <button class="rb-btn rb-btn--quiet rb-btn--icon rb-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-c" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></button>
+    <nav class="rb-nav__links" id="nav-c" aria-label="Main">
+      <a class="rb-nav__link" href="#" aria-current="page">Scores</a>
+      <a class="rb-nav__link" href="#">Schedule</a>
+      <a class="rb-nav__link" href="#">Teams</a>
+      <a class="rb-nav__link" href="#">Invite</a>
+    </nav>
+    <div class="rb-nav__end">
+      <span class="rb-live">Live · Day 3</span>
+      <span class="rb-avatar rb-avatar--ink" aria-label="Carlos">CR</span>
+    </div>
+  </header>
+  </div>
+  <div class="phones">
+    <div><p class="cap">Narrow, menu closed</p><div class="phone"><header class="rb-nav">
+    <a class="rb-nav__brand" href="#">Ribuk</a>
+    <button class="rb-btn rb-btn--quiet rb-btn--icon rb-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-c" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></button>
+    <nav class="rb-nav__links" id="nav-c" aria-label="Main">
+      <a class="rb-nav__link" href="#" aria-current="page">Scores</a>
+      <a class="rb-nav__link" href="#">Schedule</a>
+      <a class="rb-nav__link" href="#">Teams</a>
+      <a class="rb-nav__link" href="#">Invite</a>
+    </nav>
+    <div class="rb-nav__end">
+      <span class="rb-live">Live · Day 3</span>
+      <span class="rb-avatar rb-avatar--ink" aria-label="Carlos">CR</span>
+    </div>
+  </header></div></div>
+    <div><p class="cap">Narrow, menu open</p><div class="phone"><header class="rb-nav">
+    <a class="rb-nav__brand" href="#">Ribuk</a>
+    <button class="rb-btn rb-btn--quiet rb-btn--icon rb-nav__toggle" type="button" aria-expanded="true" aria-controls="nav-o" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></button>
+    <nav class="rb-nav__links" id="nav-o" aria-label="Main">
+      <a class="rb-nav__link" href="#" aria-current="page">Scores</a>
+      <a class="rb-nav__link" href="#">Schedule</a>
+      <a class="rb-nav__link" href="#">Teams</a>
+      <a class="rb-nav__link" href="#">Invite</a>
+    </nav>
+    <div class="rb-nav__end">
+      <span class="rb-live">Live · Day 3</span>
+      <span class="rb-avatar rb-avatar--ink" aria-label="Carlos">CR</span>
+    </div>
+  </header></div></div>
+  </div>
+</div>
+</body>
+</html>
