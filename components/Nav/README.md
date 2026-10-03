@@ -11,7 +11,7 @@ The bar across the top of every page: the Ribuk wordmark, the main sections, and
 
 ## Live indicator
 
-- `<span class="rb-live">Live · Day 3</span>` shows the event is running, with a pulsing `leaf` dot (still when reduced motion is on). Use it only while something is actually live.
+- `<span class="rb-live">Live<span class="rb-live__more"> · Day 3</span></span>` shows the event is running, with a pulsing `leaf` dot (still when reduced motion is on). In a narrow nav the `rb-live__more` part hides so everything fits on one row. Use it only while something is actually live.
 
 ## Count
 
@@ -21,7 +21,7 @@ The bar across the top of every page: the Ribuk wordmark, the main sections, and
 
 ```html
 <header class="rb-nav rb-nav--sticky">
-  <a class="rb-nav__brand" href="/">Ribuk</a>
+  <a class="rb-nav__brand" href="/"><svg class="rb-nav__mark" …ribuk-mark…></svg>Ribuk</a>
   <button class="rb-btn rb-btn--quiet rb-btn--icon rb-nav__toggle" type="button"
           aria-expanded="false" aria-controls="main-nav" aria-label="Menu"><svg …lucide menu…></svg></button>
   <nav class="rb-nav__links" id="main-nav" aria-label="Main">
@@ -29,7 +29,7 @@ The bar across the top of every page: the Ribuk wordmark, the main sections, and
     <a class="rb-nav__link" href="/schedule">Schedule</a>
   </nav>
   <div class="rb-nav__end">
-    <span class="rb-live">Live · Day 3</span>
+    <span class="rb-live">Live<span class="rb-live__more"> · Day 3</span></span>
     <a class="rb-avatar rb-avatar--ink" href="/me" aria-label="Your profile">CR</a>
   </div>
 </header>
@@ -39,5 +39,5 @@ Keep this order in the markup (toggle before links): the CSS relies on it. You p
 
 ## Notes
 
-- The wordmark is Fraunces 800 at 26px until there's a logo.
+- The brand is the space rock mark (34px, `ribuk-mark.svg` inline, `aria-hidden`) beside "Ribuk" in Fraunces 800 at 26px. Inline the SVG so it can use the colour tokens.
 - The collapse uses a container query, so the nav also folds when it's placed in a narrow column, not just on phones.

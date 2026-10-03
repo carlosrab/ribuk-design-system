@@ -6,6 +6,7 @@ The tokens and brand guidelines for Ribuk.
 - `tokens.css`: the same tokens as CSS custom properties (`var(--leaf)`, `var(--space-4)`) and type classes (`.h1`, `.body`, `.label`). It loads Fraunces and DM Sans from `fonts/`, so keep `tokens.css` next to that folder.
 - `fonts/`: `Fraunces-Variable.woff` and `DMSans-Variable.woff`, the variable fonts `tokens.css` uses. The `Fraunces/` and `DM_Sans/` folders are the original Google Fonts downloads, with their licenses.
 - `components/bundle.css`: every component's styles as plain `rb-` classes. Each component folder has a `README.md` with usage and markup and a `preview.html` you can open in a browser.
+- `assets/Logos/`: the space rock logo (mark, lockups, one-colour versions), favicons and app icons, with usage rules in its README.
 - `assets/Icons/`: the Lucide icons the components use (ISC license in `LICENSE-lucide.txt`). In the app, `lucide-svelte` gives you the full set.
 - `components/Cover/preview.html`: the system's cover, which expects `tokens.css` to be loaded first.
 
@@ -64,6 +65,8 @@ Ribuk is bold and playful: a sturdy grass green against near-black ink, a pale m
 
 ### Logo and icons
 
-- There's no logo yet: set "Ribuk" in Fraunces 800, `ink` on `paper` or `paper` on `ink`.
+- The logo is the space rock: a lumpy `leaf` asteroid with an `ink` outline and craters, set beside "Ribuk" in Fraunces 800. Use the SVG files in the Logos asset group and never redraw it. In the nav bar the mark sits beside live Fraunces text (`rb-nav__brand`), which keeps the name readable to screen readers.
+- On `paper` use `ribuk-lockup` or `ribuk-mark`; on `ink` use the `-on-ink` versions. Don't put it on `leaf` or team colours. Keep clear space equal to the big crater around it, and don't go below 16px for the mark.
+- The rock can tumble (rotate up to about ±20°) in playful moments, but stays upright in the nav bar and app icons.
 - Icons are Lucide: rounded 24px line icons with a 2px stroke, in the text colour. In SvelteKit use `lucide-svelte`; the ones the components use are in the Icons asset group. Use 18px icons in buttons and 16px in tags and small text.
 - An icon-only button always has an `aria-label`. Icons never replace a word where meaning matters: pair arrows with numbers and status icons with a short message.
