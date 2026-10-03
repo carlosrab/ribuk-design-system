@@ -4,8 +4,6 @@
 <head>
 <meta charset="utf-8">
 <title>Ribuk</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap">
 <style>
   html, body { margin:0; height:100%; }
   body { background:var(--paper); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
@@ -19,6 +17,7 @@
   .blk { rx:var(--radius-md); }
   .leafy { fill:var(--leaf); }
   .cut { fill:var(--paper); }
+  .hl { fill:var(--highlight); }
   .words { position:absolute; left:var(--space-8); bottom:var(--space-8); max-width:440px; }
   .name { margin:0; font-family:var(--font-serif); font-size:120px; line-height:.92; font-weight:800; letter-spacing:-.02em; color:var(--ink); }
   .tag { margin:var(--space-2) 0 0 4px; font-size:14px; line-height:20px; color:var(--ink-muted); }
@@ -30,7 +29,7 @@
 <div class="art" aria-hidden="true">
 <svg viewBox="0 0 480 288" width="480" height="288">
 <!--
-  blocks      leaf 160x256 slab bled off the top (the brand colour, largest) · ink 296x200 bleeding off the right · leaf-soft 128x64 tint above it · leaf-ink 32 disc — about 40% of 960x288
+  blocks      leaf 160x256 slab bled off the top (the brand colour, largest) · ink 296x200 bleeding off the right · leaf-soft 128x64 tint above it · leaf-ink 32 disc · highlight 32 disc as a sticker on the ink field (it vanishes on paper) — about 40% of 960x288
   arrangement one tall leaf slab with an ink field and two satellites, bottoms on one line space-8 above the edge, space-4 gutters
   pattern     literal motif (leaf): 32px lens-shaped leaves from two space-8 arcs, alternating direction like scattered leaves — playful, and it is the brand's own name for its green; 13 leaf leaves on the ink field, 3 cut in paper from the slab
   scales      sides in space-8 / space-4 multiples; gutters space-4; leaf pitch space-8 + space-4 (48px); block corners radius-md, disc rx half of space-8
@@ -52,6 +51,7 @@
 <path class="leafy" d="M320 224 A32 32 0 0 1 352 192 A32 32 0 0 1 320 224 Z"/>
 <path class="leafy" d="M368 192 A32 32 0 0 1 400 224 A32 32 0 0 1 368 192 Z"/>
 <path class="leafy" d="M416 224 A32 32 0 0 1 448 192 A32 32 0 0 1 416 224 Z"/>
+<circle class="hl" cx="432" cy="112" r="16"/>
 <path class="cut" d="M56 176 A32 32 0 0 1 88 144 A32 32 0 0 1 56 176 Z"/>
 <path class="cut" d="M104 176 A32 32 0 0 1 136 208 A32 32 0 0 1 104 176 Z"/>
 <path class="cut" d="M56 200 A32 32 0 0 1 88 232 A32 32 0 0 1 56 200 Z"/>

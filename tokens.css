@@ -1,15 +1,31 @@
 /* Ribuk design system: generated from tokens.json. Edit tokens.json, not this file. */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap');
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("fonts/Fraunces-Variable.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Variable.woff") format("woff");
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --paper: #fbfbf7;
   --line: #d9ddd4;
   --ink: #111410;
   --ink-muted: #535a50;
-  --leaf: #33d65a;
+  --leaf: #1fa64a;
   --on-leaf: var(--ink);
-  --leaf-ink: #147a32;
-  --leaf-soft: #dcf8e2;
+  --leaf-ink: #167534;
+  --leaf-soft: #d3ecd8;
+  --highlight: #fff38a;
   --alert: #c2410c;
   --space-1: 4px;
   --space-2: 8px;
