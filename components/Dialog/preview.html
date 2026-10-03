@@ -1,0 +1,29 @@
+<!-- @dsCard group="Feedback" height=328 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dialog</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+  .stage { position: relative; min-height: 320px; display: grid; place-items: center; padding: var(--space-4); background: rgb(17 20 16 / .6); box-sizing: border-box; }
+  .stage .rb-dialog { position: static; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <dialog class="rb-dialog" open aria-labelledby="d-title">
+    <h2 class="rb-dialog__title" id="d-title">Reset Day 2 scores?</h2>
+    <p class="rb-dialog__body">All four teams go back to 0 for Day 2. Other days aren't affected, and this can't be undone.</p>
+    <div class="rb-dialog__actions">
+      <button class="rb-btn rb-btn--secondary" type="button">Keep scores</button>
+      <button class="rb-btn rb-btn--danger" type="button">Reset Day 2</button>
+    </div>
+  </dialog>
+</div>
+</body>
+</html>

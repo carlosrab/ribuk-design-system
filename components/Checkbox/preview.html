@@ -1,0 +1,32 @@
+<!-- @dsCard group="Forms" height=244 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Checkbox & radio</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+  .demo { grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: var(--space-4) var(--space-8); align-items: start; }
+</style>
+</head>
+<body>
+<form class="demo" onsubmit="return false">
+  <fieldset class="rb-fieldset">
+    <legend class="rb-legend">Games you'll play</legend>
+    <label class="rb-check"><input type="checkbox" name="games" value="kart" checked>Kart racing</label>
+    <label class="rb-check"><input type="checkbox" name="games" value="party" checked>Party games</label>
+    <label class="rb-check"><input type="checkbox" name="games" value="strategy">Strategy night</label>
+    <label class="rb-check"><input type="checkbox" name="games" value="retro" disabled><span>Retro hour <span class="rb-optional">(full)</span></span></label>
+  </fieldset>
+  <fieldset class="rb-fieldset">
+    <legend class="rb-legend">Scoring</legend>
+    <label class="rb-check"><input type="radio" name="scoring" value="points" checked><span>Points<span class="rb-check__hint">Every win adds to the team total.</span></span></label>
+    <label class="rb-check"><input type="radio" name="scoring" value="elim"><span>Knockout<span class="rb-check__hint">Losers drop out each round.</span></span></label>
+  </fieldset>
+</form>
+</body>
+</html>

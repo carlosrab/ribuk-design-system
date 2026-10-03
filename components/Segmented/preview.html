@@ -1,0 +1,33 @@
+<!-- @dsCard group="Forms" height=180 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Segmented control</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="rb-segmented" role="tablist" aria-label="Scores view">
+    <button class="rb-segmented__opt" role="tab" aria-selected="true" type="button">Teams</button>
+    <button class="rb-segmented__opt" role="tab" aria-selected="false" type="button">Players</button>
+    <button class="rb-segmented__opt" role="tab" aria-selected="false" type="button">Games</button>
+  </div>
+  <fieldset class="rb-fieldset" style="max-width:420px">
+    <legend class="rb-legend">Are you coming?</legend>
+    <div class="rb-segmented rb-segmented--full">
+      <label class="rb-segmented__opt"><input type="radio" name="rsvp" value="yes" checked><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Going</label>
+      <label class="rb-segmented__opt"><input type="radio" name="rsvp" value="maybe">Maybe</label>
+      <label class="rb-segmented__opt"><input type="radio" name="rsvp" value="no">Can't</label>
+    </div>
+  </fieldset>
+</div>
+</body>
+</html>

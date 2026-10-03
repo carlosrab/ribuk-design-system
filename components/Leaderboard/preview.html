@@ -1,0 +1,32 @@
+<!-- @dsCard group="Scores" height=308 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Leaderboard</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+  .demo { max-width: 640px; }
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="rb-board-wrap">
+    <table class="rb-board">
+      <caption>Standings after Day 3</caption>
+      <thead><tr><th scope="col">#</th><th scope="col">Team</th><th scope="col" class="rb-board__num rb-board__opt">Played</th><th scope="col" class="rb-board__num">Points</th><th scope="col" class="rb-board__num">Change</th></tr></thead>
+      <tbody>
+      <tr class="rb-board__lead"><td class="rb-board__rank">1</td><td><span class="rb-team rb-team--1"><span class="rb-team__badge" aria-hidden="true">M</span>Team Moss</span></td><td class="rb-board__num rb-board__opt">9</td><td class="rb-board__num rb-board__points">42</td><td class="rb-board__num"><span class="rb-delta rb-delta--up"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>1<span class="rb-sr"> places up</span></span></td></tr>
+      <tr><td class="rb-board__rank">2</td><td><span class="rb-team rb-team--3"><span class="rb-team__badge" aria-hidden="true">S</span>Team Sprout</span></td><td class="rb-board__num rb-board__opt">9</td><td class="rb-board__num rb-board__points">39</td><td class="rb-board__num"><span class="rb-delta rb-delta--down"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>1<span class="rb-sr"> places down</span></span></td></tr>
+      <tr class="rb-board__you"><td class="rb-board__rank">3</td><td><span class="rb-team rb-team--2"><span class="rb-team__badge" aria-hidden="true">I</span>Team Ink</span></td><td class="rb-board__num rb-board__opt">8</td><td class="rb-board__num rb-board__points">31</td><td class="rb-board__num"><span class="rb-delta rb-delta--same">–<span class="rb-sr">no change</span></span></td></tr>
+      <tr><td class="rb-board__rank">4</td><td><span class="rb-team rb-team--4"><span class="rb-team__badge" aria-hidden="true">B</span>Team Bloom</span></td><td class="rb-board__num rb-board__opt">9</td><td class="rb-board__num rb-board__points">27</td><td class="rb-board__num"><span class="rb-delta rb-delta--same">–<span class="rb-sr">no change</span></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

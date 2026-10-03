@@ -1,0 +1,32 @@
+<!-- @dsCard group="Labels" height=176 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tag & sticker</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { display: grid; gap: var(--space-4); padding: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+  .headline { margin: 0; font-family: var(--font-serif); font-weight: 800; font-size: 32px; line-height: 38px; letter-spacing: -.01em; }
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="row">
+    <span class="rb-tag">Co-op</span>
+    <span class="rb-tag">4 players</span>
+    <span class="rb-tag rb-tag--neutral">Voice on</span>
+    <span class="rb-tag rb-tag--ink">Ranked</span>
+  </div>
+  <div class="row">
+    <span class="rb-sticker">New</span>
+    <span class="rb-sticker rb-sticker--leaf">Live</span>
+    <span class="rb-sticker rb-sticker--leaf rb-sticker--small">Hot</span>
+    <p class="headline">Game night is <mark class="rb-mark">on.</mark></p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- @dsCard group="Forms" height=219 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Switch</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+  .demo { max-width: 420px; gap: 0; }
+  .demo > * + * { border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="demo">
+  <label class="rb-switch rb-switch--end"><input type="checkbox" role="switch" checked>Voice chat on</label>
+  <label class="rb-switch rb-switch--end"><input type="checkbox" role="switch">Show live scores to guests</label>
+  <label class="rb-switch rb-switch--end"><input type="checkbox" role="switch">Spectator mode</label>
+  <label class="rb-switch rb-switch--end"><input type="checkbox" role="switch" checked disabled>Host controls (always on)</label>
+</div>
+</body>
+</html>

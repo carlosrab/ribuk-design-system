@@ -1,0 +1,27 @@
+<!-- @dsCard group="Scores" height=120 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Day tracker</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+  .demo { max-width: 640px; }
+</style>
+</head>
+<body>
+<div class="demo">
+  <ol class="rb-steps" aria-label="Game week">
+    <li class="rb-step" data-state="done"><span class="rb-step__dot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="rb-sr">Done:</span></span><span class="rb-step__label">Day 1</span><span class="rb-step__meta">Mon</span></li>
+    <li class="rb-step" data-state="done"><span class="rb-step__dot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="rb-sr">Done:</span></span><span class="rb-step__label">Day 2</span><span class="rb-step__meta">Tue</span></li>
+    <li class="rb-step" data-state="live" aria-current="step"><span class="rb-step__dot">3</span><span class="rb-step__label">Day 3</span><span class="rb-step__meta">Live now</span></li>
+    <li class="rb-step" data-state="next"><span class="rb-step__dot">4</span><span class="rb-step__label">Day 4</span><span class="rb-step__meta">Thu</span></li>
+    <li class="rb-step" data-state="next"><span class="rb-step__dot">5</span><span class="rb-step__label">Finals</span><span class="rb-step__meta">Fri</span></li>
+  </ol>
+</div>
+</body>
+</html>

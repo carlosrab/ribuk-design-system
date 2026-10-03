@@ -1,0 +1,43 @@
+<!-- @dsCard group="Scores" height=300 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Progress</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+  .demo { max-width: 520px; }
+  .teams { display: grid; gap: var(--space-2); }
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="rb-progress rb-progress--large" role="progressbar" aria-label="Game week" aria-valuemin="0" aria-valuemax="48" aria-valuenow="35" aria-valuetext="35 of 48">
+    <div class="rb-progress__head"><span class="rb-progress__label">Game week</span><span class="rb-progress__value">35 of 48</span></div>
+    <div class="rb-progress__track"><div class="rb-progress__bar" style="--value: 73%"></div></div>
+  </div>
+  <div class="teams">
+  <div class="rb-progress rb-team--1" role="progressbar" aria-label="Team Moss" aria-valuemin="0" aria-valuemax="12" aria-valuenow="9" aria-valuetext="9 of 12">
+    <div class="rb-progress__head"><span class="rb-progress__label">Team Moss</span><span class="rb-progress__value">9 of 12</span></div>
+    <div class="rb-progress__track"><div class="rb-progress__bar" style="--value: 75%"></div></div>
+  </div>
+  <div class="rb-progress rb-team--2" role="progressbar" aria-label="Team Ink" aria-valuemin="0" aria-valuemax="12" aria-valuenow="8" aria-valuetext="8 of 12">
+    <div class="rb-progress__head"><span class="rb-progress__label">Team Ink</span><span class="rb-progress__value">8 of 12</span></div>
+    <div class="rb-progress__track"><div class="rb-progress__bar" style="--value: 67%"></div></div>
+  </div>
+  <div class="rb-progress rb-team--3" role="progressbar" aria-label="Team Sprout" aria-valuemin="0" aria-valuemax="12" aria-valuenow="9" aria-valuetext="9 of 12">
+    <div class="rb-progress__head"><span class="rb-progress__label">Team Sprout</span><span class="rb-progress__value">9 of 12</span></div>
+    <div class="rb-progress__track"><div class="rb-progress__bar" style="--value: 75%"></div></div>
+  </div>
+  <div class="rb-progress rb-team--4" role="progressbar" aria-label="Team Bloom" aria-valuemin="0" aria-valuemax="12" aria-valuenow="6" aria-valuetext="6 of 12">
+    <div class="rb-progress__head"><span class="rb-progress__label">Team Bloom</span><span class="rb-progress__value">6 of 12</span></div>
+    <div class="rb-progress__track"><div class="rb-progress__bar" style="--value: 50%"></div></div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- @dsCard group="Scores" height=180 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Stat tile</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="rb-stats">
+    <div class="rb-stat rb-stat--ink">
+      <p class="rb-stat__label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2"/><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2"/><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3"/></svg>Leader</p>
+      <p class="rb-stat__value">42</p>
+      <p class="rb-stat__meta"><span class="rb-team rb-team--1"><span class="rb-team__badge" aria-hidden="true">M</span>Team Moss</span></p>
+    </div>
+    <div class="rb-stat">
+      <p class="rb-stat__label">Games played</p>
+      <p class="rb-stat__value">35</p>
+      <p class="rb-stat__meta">of 48 this week</p>
+    </div>
+    <div class="rb-stat rb-stat--paper">
+      <p class="rb-stat__label">Points today</p>
+      <p class="rb-stat__value">58</p>
+      <p class="rb-stat__meta"><span class="rb-delta rb-delta--up"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>12</span>vs. yesterday</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- @dsCard group="Forms" height=110 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Select</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+  .demo { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: var(--space-4) var(--space-8); }
+</style>
+</head>
+<body>
+<form class="demo" onsubmit="return false">
+  <div class="rb-field">
+    <label class="rb-label" for="team">Your team</label>
+    <div class="rb-select"><select class="rb-input" id="team"><option>Team Moss</option><option>Team Ink</option><option>Team Sprout</option><option>Team Bloom</option></select></div>
+  </div>
+  <div class="rb-field">
+    <label class="rb-label" for="day">Event day</label>
+    <div class="rb-select"><select class="rb-input" id="day" disabled><option>Day 3 · Wednesday</option></select></div>
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- @dsCard group="Scores" height=212 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Score stepper</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="row" style="gap: var(--space-4) var(--space-8)">
+    <div class="rb-field">
+      <span class="rb-label" id="moss-l"><span class="rb-team rb-team--1"><span class="rb-team__badge" aria-hidden="true">M</span>Team Moss</span></span>
+      <div class="rb-stepper" role="group" aria-labelledby="moss-l">
+        <button class="rb-stepper__btn" type="button" aria-label="Take a point from Team Moss"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+        <input class="rb-stepper__value" type="number" inputmode="numeric" value="12" aria-label="Team Moss points">
+        <button class="rb-stepper__btn rb-stepper__btn--add" type="button" aria-label="Give Team Moss a point"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
+      </div>
+    </div>
+    <div class="rb-field">
+      <span class="rb-label" id="ink-l"><span class="rb-team rb-team--2"><span class="rb-team__badge" aria-hidden="true">I</span>Team Ink</span></span>
+      <div class="rb-stepper" role="group" aria-labelledby="ink-l">
+        <button class="rb-stepper__btn" type="button" aria-label="Take a point from Team Ink" disabled><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+        <input class="rb-stepper__value" type="number" inputmode="numeric" value="0" aria-label="Team Ink points">
+        <button class="rb-stepper__btn rb-stepper__btn--add" type="button" aria-label="Give Team Ink a point"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="rb-field">
+    <span class="rb-label" id="big-l">Large, for the scorekeeper's phone</span>
+    <div class="rb-stepper rb-stepper--large" role="group" aria-labelledby="big-l">
+      <button class="rb-stepper__btn" type="button" aria-label="Take a point"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+      <input class="rb-stepper__value" type="number" inputmode="numeric" value="27" aria-label="Points">
+      <button class="rb-stepper__btn rb-stepper__btn--add" type="button" aria-label="Add a point"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

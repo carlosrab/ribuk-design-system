@@ -1,0 +1,66 @@
+<!-- @dsCard group="Invite" height=410 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calendar</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { padding: var(--space-4); display: grid; gap: var(--space-4); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; }
+
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="rb-calendar">
+    <div class="rb-calendar__head">
+      <button class="rb-btn rb-btn--quiet rb-btn--icon" type="button" aria-label="Previous month"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+      <h3 class="rb-calendar__month" id="cal-m" aria-live="polite">October 2026</h3>
+      <button class="rb-btn rb-btn--quiet rb-btn--icon" type="button" aria-label="Next month"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+    </div>
+    <div class="rb-calendar__grid" role="group" aria-labelledby="cal-m">
+        <span class="rb-calendar__dow"><abbr title="Mon">M</abbr></span><span class="rb-calendar__dow"><abbr title="Tue">T</abbr></span><span class="rb-calendar__dow"><abbr title="Wed">W</abbr></span><span class="rb-calendar__dow"><abbr title="Thu">T</abbr></span><span class="rb-calendar__dow"><abbr title="Fri">F</abbr></span><span class="rb-calendar__dow"><abbr title="Sat">S</abbr></span><span class="rb-calendar__dow"><abbr title="Sun">S</abbr></span>
+        <button class="rb-day" type="button" data-outside aria-label="September 28">28</button>
+        <button class="rb-day" type="button" data-outside aria-label="September 29">29</button>
+        <button class="rb-day" type="button" data-outside aria-label="September 30">30</button>
+        <button class="rb-day" type="button" aria-label="October 1">1</button>
+        <button class="rb-day" type="button" aria-current="date" aria-label="October 2">2</button>
+        <button class="rb-day" type="button" aria-label="October 3">3</button>
+        <button class="rb-day" type="button" aria-label="October 4">4</button>
+        <button class="rb-day" type="button" disabled aria-label="October 5, unavailable">5</button>
+        <button class="rb-day" type="button" disabled aria-label="October 6, unavailable">6</button>
+        <button class="rb-day" type="button" aria-label="October 7">7</button>
+        <button class="rb-day" type="button" aria-label="October 8">8</button>
+        <button class="rb-day" type="button" aria-label="October 9">9</button>
+        <button class="rb-day" type="button" aria-label="October 10">10</button>
+        <button class="rb-day" type="button" aria-label="October 11">11</button>
+        <button class="rb-day" type="button" data-range="start" aria-pressed="true" aria-label="October 12">12</button>
+        <button class="rb-day" type="button" data-range="mid" aria-pressed="true" aria-label="October 13">13</button>
+        <button class="rb-day" type="button" data-range="mid" aria-pressed="true" aria-label="October 14">14</button>
+        <button class="rb-day" type="button" data-range="mid" aria-pressed="true" aria-label="October 15">15</button>
+        <button class="rb-day" type="button" data-range="end" aria-pressed="true" data-mark aria-label="October 16, finals">16</button>
+        <button class="rb-day" type="button" aria-label="October 17">17</button>
+        <button class="rb-day" type="button" aria-label="October 18">18</button>
+        <button class="rb-day" type="button" aria-label="October 19">19</button>
+        <button class="rb-day" type="button" aria-label="October 20">20</button>
+        <button class="rb-day" type="button" aria-label="October 21">21</button>
+        <button class="rb-day" type="button" aria-label="October 22">22</button>
+        <button class="rb-day" type="button" data-mark aria-label="October 23, game night">23</button>
+        <button class="rb-day" type="button" aria-label="October 24">24</button>
+        <button class="rb-day" type="button" aria-label="October 25">25</button>
+        <button class="rb-day" type="button" aria-label="October 26">26</button>
+        <button class="rb-day" type="button" aria-label="October 27">27</button>
+        <button class="rb-day" type="button" aria-label="October 28">28</button>
+        <button class="rb-day" type="button" aria-label="October 29">29</button>
+        <button class="rb-day" type="button" aria-label="October 30">30</button>
+        <button class="rb-day" type="button" aria-label="October 31">31</button>
+        <button class="rb-day" type="button" data-outside aria-label="November 1">1</button>
+    </div>
+    <div class="rb-calendar__foot"><span>Mon 12 – Fri 16 · 5 days</span><button class="rb-btn rb-btn--primary rb-btn--small" type="button">Use these dates</button></div>
+  </div>
+</div>
+</body>
+</html>

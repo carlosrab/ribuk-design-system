@@ -1,0 +1,51 @@
+<!-- @dsCard group="Layout" height=428 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Card</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: var(--space-4); padding: var(--space-4); align-items: start; }
+  .score { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; font-variant-numeric: tabular-nums; }
+  .score li { display: flex; justify-content: space-between; padding: var(--space-2); border-radius: var(--radius-sm); }
+  .score li.lead { background: var(--paper); font-weight: 700; }
+  .score span:last-child { font-weight: 700; }
+  .sticker-spot { position: absolute; left: var(--space-4); top: var(--space-4); }
+</style>
+</head>
+<body>
+<div class="demo">
+  <article class="rb-card">
+    <span class="rb-tag">Friday · 9 pm</span>
+    <h3 class="rb-card__title">Game night is on</h3>
+    <p class="rb-card__body">Four slots left. Bring snacks and your worst strategy.</p>
+    <div class="rb-card__actions">
+      <button class="rb-btn rb-btn--primary" type="button">I'm in</button>
+      <button class="rb-btn rb-btn--quiet" type="button">Details</button>
+    </div>
+  </article>
+  <section class="rb-card rb-card--tint">
+    <h3 class="rb-card__title">This week's table</h3>
+    <ol class="score">
+      <li class="lead"><span>1 · Team Moss</span><span>12</span></li>
+      <li><span>2 · Team Ink</span><span>9</span></li>
+      <li><span>3 · Team Sprout</span><span>7</span></li>
+    </ol>
+    <p class="rb-card__meta">Example scores.</p>
+  </section>
+  <article class="rb-card rb-card--ink">
+    <span class="rb-card__leaves" aria-hidden="true"></span>
+    <span class="rb-sticker sticker-spot">New</span>
+    <h3 class="rb-card__title">Ranked rumble</h3>
+    <p class="rb-card__meta">Season 3 opens Saturday. Best of five.</p>
+    <div class="rb-card__actions">
+      <button class="rb-btn rb-btn--primary" type="button">Sign up</button>
+      <button class="rb-btn rb-btn--secondary" type="button">Rules</button>
+    </div>
+  </article>
+</div>
+</body>
+</html>

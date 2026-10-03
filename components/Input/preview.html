@@ -1,0 +1,37 @@
+<!-- @dsCard group="Forms" height=322 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Input</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+  .demo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: var(--space-4) var(--space-8); padding: var(--space-4); }
+</style>
+</head>
+<body>
+<form class="demo" onsubmit="return false">
+  <div class="rb-field">
+    <label class="rb-label" for="handle">Gamer tag</label>
+    <input class="rb-input" id="handle" name="handle" placeholder="e.g. mossy_boi" aria-describedby="handle-help">
+    <p class="rb-help" id="handle-help">Shown on the scoreboard. You can change it later.</p>
+  </div>
+  <div class="rb-field">
+    <label class="rb-label" for="email">Email</label>
+    <input class="rb-input" id="email" name="email" type="email" value="mossy@" aria-invalid="true" aria-describedby="email-error">
+    <p class="rb-error" id="email-error">Add the rest of your email, like name@example.com.</p>
+  </div>
+  <div class="rb-field">
+    <label class="rb-label" for="note">Snacks you're bringing <span class="rb-optional">(optional)</span></label>
+    <textarea class="rb-input" id="note" name="note" placeholder="Chips, the good salsa…"></textarea>
+  </div>
+  <div class="rb-field">
+    <label class="rb-label" for="season">Season</label>
+    <input class="rb-input" id="season" name="season" value="Season 3" disabled>
+    <p class="rb-help">Set by the host.</p>
+  </div>
+</form>
+</body>
+</html>
