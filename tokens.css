@@ -1,0 +1,76 @@
+/* Ribuk design system: generated from tokens.json. Edit tokens.json, not this file. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap');
+
+:root {
+  --paper: #fbfbf7;
+  --line: #d9ddd4;
+  --ink: #111410;
+  --ink-muted: #535a50;
+  --leaf: #33d65a;
+  --on-leaf: var(--ink);
+  --leaf-ink: #147a32;
+  --leaf-soft: #dcf8e2;
+  --alert: #c2410c;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-8: 32px;
+  --radius-sm: 6px;
+  --radius-md: 16px;
+  --radius-pill: 999px;
+  --font-serif: Fraunces, Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+}
+
+.display {
+  font-family: var(--font-serif);
+  font-size: 72px;
+  line-height: 0.95;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.h1 {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.h2 {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+}
+
+.h3 {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.small {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
