@@ -14,6 +14,7 @@
   .soft { fill:var(--leaf-soft); }
   .deep { fill:var(--ink); }
   .rock { fill:var(--leaf); stroke:var(--ink); stroke-width:4; stroke-linejoin:round; }
+  .crater { fill:var(--on-leaf); }
   .blk { rx:var(--radius-md); }
   .leafy { fill:var(--leaf); }
   .cut { fill:var(--paper); }
@@ -29,14 +30,14 @@
 <div class="art" aria-hidden="true">
 <svg viewBox="0 0 480 288" width="480" height="288">
 <!--
-  blocks      leaf 160x256 slab bled off the top (the brand colour, largest) · ink 296x200 bleeding off the right · leaf-soft 128x64 tint above it · the space rock mark (about 45px) as the one satellite on paper · highlight 32 disc as a sticker on the ink field (it vanishes on paper) — about 40% of 960x288
+  blocks      leaf 160x256 slab bled off the top (the brand colour, largest) · ink 296x200 bleeding off the right · leaf-soft 128x64 tint above it · the space rock mark (about 45px) as the one satellite on paper · highlight 32 disc as a sticker on the leaf slab (it vanishes on paper, and on the light inverse block in dark) — about 40% of 960x288
   arrangement one tall leaf slab with an ink field and two satellites, bottoms on one line space-8 above the edge, space-4 gutters
   pattern     literal motif (leaf): 32px lens-shaped leaves from two space-8 arcs, alternating direction like scattered leaves — playful, and it is the brand's own name for its green; 13 leaf leaves on the ink field, 3 cut in paper from the slab
   scales      sides in space-8 / space-4 multiples; gutters space-4; leaf pitch space-8 + space-4 (48px); block corners radius-md, disc rx half of space-8
 -->
 <rect class="leaf blk" x="24" y="-16" width="160" height="272" rx="16"/>
 <rect class="soft blk" x="200" y="-16" width="128" height="64" rx="16"/>
-<g transform="translate(338 4) scale(0.8)"><polygon class="rock" points="11,27 19,12 33,9 43,15 54,13 57,30 50,40 54,51 38,57 23,52 10,46 15,36"/><circle class="deep" cx="27" cy="26" r="4.5"/><circle class="deep" cx="41" cy="39" r="5.5"/><circle class="deep" cx="24" cy="42" r="2.5"/><circle class="deep" cx="43" cy="24" r="2"/></g>
+<g transform="translate(338 4) scale(0.8)"><polygon class="rock" points="11,27 19,12 33,9 43,15 54,13 57,30 50,40 54,51 38,57 23,52 10,46 15,36"/><circle class="crater" cx="27" cy="26" r="4.5"/><circle class="crater" cx="41" cy="39" r="5.5"/><circle class="crater" cx="24" cy="42" r="2.5"/><circle class="crater" cx="43" cy="24" r="2"/></g>
 <rect class="deep blk" x="200" y="64" width="296" height="192" rx="16"/>
 <path class="leafy" d="M224 128 A32 32 0 0 1 256 96 A32 32 0 0 1 224 128 Z"/>
 <path class="leafy" d="M272 96 A32 32 0 0 1 304 128 A32 32 0 0 1 272 96 Z"/>
@@ -51,7 +52,7 @@
 <path class="leafy" d="M320 224 A32 32 0 0 1 352 192 A32 32 0 0 1 320 224 Z"/>
 <path class="leafy" d="M368 192 A32 32 0 0 1 400 224 A32 32 0 0 1 368 192 Z"/>
 <path class="leafy" d="M416 224 A32 32 0 0 1 448 192 A32 32 0 0 1 416 224 Z"/>
-<circle class="hl" cx="432" cy="112" r="16"/>
+<circle class="hl" cx="152" cy="40" r="16"/>
 <path class="cut" d="M56 176 A32 32 0 0 1 88 144 A32 32 0 0 1 56 176 Z"/>
 <path class="cut" d="M104 176 A32 32 0 0 1 136 208 A32 32 0 0 1 104 176 Z"/>
 <path class="cut" d="M56 200 A32 32 0 0 1 88 232 A32 32 0 0 1 56 200 Z"/>

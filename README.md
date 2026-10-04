@@ -3,7 +3,7 @@
 The tokens and brand guidelines for Ribuk.
 
 - `tokens.json`: every color, type style, spacing step and radius, with a usage note for each.
-- `tokens.css`: the same tokens as CSS custom properties (`var(--leaf)`, `var(--space-4)`) and type classes (`.h1`, `.body`, `.label`). It loads Fraunces and DM Sans from `fonts/`, so keep `tokens.css` next to that folder.
+- `tokens.css`: the same tokens as CSS custom properties (`var(--leaf)`, `var(--space-4)`) and type classes (`.h1`, `.body`, `.label`), for both the light and dark themes. It loads Fraunces and DM Sans from `fonts/`, so keep `tokens.css` next to that folder.
 - `fonts/`: `Fraunces-Variable.woff` and `DMSans-Variable.woff`, the variable fonts `tokens.css` uses. The `Fraunces/` and `DM_Sans/` folders are the original Google Fonts downloads, with their licenses.
 - `components/bundle.css`: every component's styles as plain `rb-` classes. Each component folder has a `README.md` with usage and markup and a `preview.html` you can open in a browser.
 - `assets/Logos/`: the space rock logo (mark, lockups, one-colour versions), favicons and app icons, with usage rules in its README.
@@ -31,14 +31,23 @@ Ribuk is bold and playful: a sturdy grass green against near-black ink, a pale m
 ### Color
 
 - `paper` is the ground. `ink` carries text and the heavy blocks; `leaf` (Grass) is the brand moment. Spend `leaf` boldly, but in big shapes, not everywhere: one or two leaf areas per screen.
-- Text on `leaf` is always `on-leaf` (ink). Never set body text in `leaf` on `paper`; when green has to be text, use `leaf-ink`. `leaf` is fine for icons and meaningful borders on `paper`.
-- `highlight` is a marker, not a colour block. Put it behind a word or two of a headline (`rb-mark`), on the leading row of a table, or in a sticker (`rb-sticker`, which has an ink ring so it reads on paper), always with `ink` text on it. Use one per screen, and never as text or as a bare shape on `paper`: it nearly vanishes there.
+- Text on `leaf` is always `on-leaf` (the dark one in both themes). Never set body text in `leaf` on `paper`; when green has to be text, use `leaf-ink`. `leaf` is fine for icons and meaningful borders on `paper`.
+- `highlight` is a marker, not a colour block. Put it behind a word or two of a headline (`rb-mark`), on the leading row of a table, or in a sticker (`rb-sticker`, which has an ink ring so it reads on paper), always with `on-highlight` text on it. Use one per screen, and never as text or as a bare shape on `paper`: it nearly vanishes there.
 - `highlight` and `leaf` can sit side by side; they differ in brightness as well as hue.
-- On an `ink` block, body text is `paper` and secondary text is `paper-muted`.
+- On an `ink` block, body text is `paper`, secondary text is `paper-muted`, and green is `leaf-on-ink`.
 - `leaf-soft` tints panels and selected states. `line` is for decorative hairlines only.
 - `alert` means error or destructive, and always comes with a word or icon.
 - Team colors (`team-1` navy, `team-2` sky, `team-3` orange, `team-4` magenta) are only for telling teams apart: badges, bars, chart marks. They were picked to stay distinct for colour-blind players, and every use still carries the team's initial or name. Text on them is `on-team-N`. Never use them for buttons, links or status.
-- Focus ring: 2px solid `ink`, offset 2px (17.9:1 on `paper`; on an ink block, use `leaf`, 5.8:1).
+- Focus ring: 2px solid `ink`, offset 2px (16:1 or better on `paper` in both themes; on an ink block, use `leaf-on-ink`).
+
+### Dark mode
+
+- Every colour token has a light and a dark value. Set `data-theme="dark"` (or `"light"`) on `<html>` to choose. The repository's `tokens.css` follows the device's light or dark setting when neither is set.
+- `ink` and `paper` swap: dark ground, light text. An "ink block" (ink cards, toasts, ink stat tiles, the selected segment) becomes a light inverse block in dark mode, so it still stands out. Write components with the tokens and they flip on their own.
+- `leaf` stays the same green. Text on it (`on-leaf`) and on `highlight` (`on-highlight`) is always the dark one; text on team colours uses `on-team-N`. Green text on paper is `leaf-ink`; green on an ink block is `leaf-on-ink`.
+- `highlight` and the team colours shift slightly brighter in dark mode so they hold contrast on the dark ground; `alert` turns a lighter orange.
+- On dark grounds use the logo's `-on-ink` files. The favicon switches by itself.
+- Check new screens in both themes: every text pair in the token notes holds 4.5:1 in each.
 
 ### Type
 

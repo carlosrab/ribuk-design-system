@@ -18,7 +18,8 @@ A multi-size `favicon.ico` (16, 32, 48) sits with these files in the repository.
 
 - Leave clear space around the mark equal to the big crater's width (about a fifth of the mark).
 - Smallest sizes: 16px for the mark (favicons), 24px in UI, 96px wide for the lockup.
-- Use the light versions on `paper` and `leaf-soft`, the on-ink versions on `ink`. Don't place it on `leaf`, where the rock disappears into the ground, or on team colours.
+- Use the light versions on light grounds (`paper` and `leaf-soft` in the light theme) and the on-ink versions on dark grounds (`ink` blocks in light, `paper` in dark mode). Don't place it on `leaf`, where the rock disappears into the ground, or on team colours.
+- When inlining the SVG in code, colour it with tokens so it follows the theme: rock fill `leaf`, outline `ink`, craters `on-leaf`.
 - Don't recolour the rock, swap the craters, stretch it, add effects or rebuild the wordmark in another font.
 - The rock may tumble: a playful rotation (up to about ±20°) is fine for stickers, loaders and party moments, but keep it upright in the nav bar and app icons.
 

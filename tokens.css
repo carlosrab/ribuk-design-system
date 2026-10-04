@@ -16,7 +16,9 @@
   font-display: swap;
 }
 
-:root {
+/* Light theme (default) */
+:root, [data-theme="light"] {
+  color-scheme: light;
   --paper: #fbfbf7;
   --line: #d9ddd4;
   --ink: #111410;
@@ -25,8 +27,10 @@
   --leaf: #1fa64a;
   --on-leaf: var(--ink);
   --leaf-ink: #167534;
+  --leaf-on-ink: var(--leaf);
   --leaf-soft: #d3ecd8;
   --highlight: #fff38a;
+  --on-highlight: var(--ink);
   --alert: #c2410c;
   --alert-soft: #fde8de;
   --team-1: #1d3f8f;
@@ -37,6 +41,65 @@
   --on-team-3: var(--ink);
   --team-4: #b8327a;
   --on-team-4: var(--paper);
+}
+
+/* Dark theme: chosen explicitly */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #121511;
+  --line: #30362d;
+  --ink: #eef0e8;
+  --ink-muted: #a4ab9f;
+  --paper-muted: #4d544a;
+  --leaf: #1fa64a;
+  --on-leaf: var(--paper);
+  --leaf-ink: #6bd385;
+  --leaf-on-ink: #167534;
+  --leaf-soft: #1a3a23;
+  --highlight: #f4e36a;
+  --on-highlight: var(--paper);
+  --alert: #ff8a5b;
+  --alert-soft: #3b1f15;
+  --team-1: #4c7be0;
+  --on-team-1: var(--paper);
+  --team-2: #8fd3fb;
+  --on-team-2: var(--paper);
+  --team-3: #e69f00;
+  --on-team-3: var(--paper);
+  --team-4: #e0609f;
+  --on-team-4: var(--paper);
+}
+
+/* Dark theme: follows the device unless a theme is set */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --paper: #121511;
+    --line: #30362d;
+    --ink: #eef0e8;
+    --ink-muted: #a4ab9f;
+    --paper-muted: #4d544a;
+    --leaf: #1fa64a;
+    --on-leaf: var(--paper);
+    --leaf-ink: #6bd385;
+    --leaf-on-ink: #167534;
+    --leaf-soft: #1a3a23;
+    --highlight: #f4e36a;
+    --on-highlight: var(--paper);
+    --alert: #ff8a5b;
+    --alert-soft: #3b1f15;
+    --team-1: #4c7be0;
+    --on-team-1: var(--paper);
+    --team-2: #8fd3fb;
+    --on-team-2: var(--paper);
+    --team-3: #e69f00;
+    --on-team-3: var(--paper);
+    --team-4: #e0609f;
+    --on-team-4: var(--paper);
+  }
+}
+
+:root {
   --space-1: 4px;
   --space-2: 8px;
   --space-4: 16px;
