@@ -10,6 +10,16 @@ The tokens and brand guidelines for Ribuk.
 - `assets/Icons/`: the Lucide icons the components use (ISC license in `LICENSE-lucide.txt`). In the app, `lucide-svelte` gives you the full set.
 - `components/Cover/preview.html`: the system's cover, which expects `tokens.css` to be loaded first.
 
+## Using it as a dependency
+
+The apps depend on this repository through npm, pinned to a tag:
+
+```json
+"@ribuk/design-system": "github:carlosrab/ribuk-design-system#v0.1.0"
+```
+
+Import `@ribuk/design-system/tokens.css` and then `@ribuk/design-system/components/bundle.css` from the root layout, before the app's own styles; the bundler emits the fonts that `tokens.css` references. A design change is: merge here, tag it (`v0.1.1`), bump the tag in the app. The `files` list in `package.json` keeps `canvas/` and the component previews out of the installed package.
+
 ## Using it in SvelteKit
 
 Copy `tokens.css`, `fonts/` and `components/` into your app (for example under `static/ribuk/`) and link `tokens.css` and then `components/bundle.css` in `src/app.html`. Install `lucide-svelte` for icons. Then use the classes in your markup:

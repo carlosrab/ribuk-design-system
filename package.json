@@ -1,0 +1,27 @@
+{
+  "name": "@ribuk/design-system",
+  "version": "0.1.0",
+  "description": "Ribuk design system: tokens, component styles, fonts and brand assets.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosrab/ribuk-design-system.git"
+  },
+  "files": [
+    "tokens.css",
+    "tokens.json",
+    "components/bundle.css",
+    "fonts/*.woff",
+    "fonts/*.txt",
+    "assets/Logos/*",
+    "assets/Icons/*",
+    "README.md"
+  ],
+  "exports": {
+    "./tokens.css": "./tokens.css",
+    "./tokens.json": "./tokens.json",
+    "./components/bundle.css": "./components/bundle.css",
+    "./fonts/*": "./fonts/*",
+    "./assets/*": "./assets/*",
+    "./package.json": "./package.json"
+  }
+}
