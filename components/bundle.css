@@ -671,3 +671,17 @@ button.rb-vote:hover { border-color: var(--ink); }
   .rb-tabbar__icon, .rb-nav__link { transition: none; }
   @keyframes rb-breathe { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
 }
+
+/* =========================================================
+   Icon tile: a round tinted disc that leads a list row, menu link or card heading
+   ========================================================= */
+.rb-icon-tile {
+  flex: none; box-sizing: border-box; width: 40px; height: 40px; display: inline-grid; place-items: center;
+  border-radius: var(--radius-pill); background: var(--leaf-soft); color: var(--leaf-ink);
+}
+.rb-icon-tile svg { width: 22px; height: 22px; margin: 0; stroke-width: 2; color: inherit; }
+.rb-icon-tile--paper { background: var(--paper); }
+.rb-icon-tile--open { background: var(--paper); border: 2px dashed var(--ink-muted); color: var(--ink-muted); }
+.rb-icon-tile--off { background: var(--line); color: var(--ink-muted); }
+.rb-icon-tile--ink { background: var(--ink); color: var(--paper); }
+.rb-invite__details li:has(> .rb-icon-tile) { align-items: center; gap: calc(var(--space-2) + var(--space-1)); }

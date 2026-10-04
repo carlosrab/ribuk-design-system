@@ -64,7 +64,7 @@ Ribuk is bold and playful: a sturdy grass green against near-black ink, a pale m
 ### Components
 
 - Components are plain HTML elements with `rb-` classes from `components/bundle.css`. Load `tokens.css` first, then `bundle.css`. The CSS covers the look and every state; your Svelte code supplies behaviour (opening dialogs, cycling poll answers, changing scores) by toggling the attributes each README names.
-- Basics: Button, Input, Card, Tag & sticker.
+- Basics: Button, Input, Card, Tag & sticker, Icon tile.
 - Forms: Checkbox & radio, Switch, Select, Segmented control.
 - Navigation: Nav bar (with the live indicator and count bubble), Tab bar.
 - Feedback: Alert, Toast, Dialog, Empty state, Loading.
@@ -78,4 +78,5 @@ Ribuk is bold and playful: a sturdy grass green against near-black ink, a pale m
 - On `paper` use `ribuk-lockup` or `ribuk-mark`; on `ink` use the `-on-ink` versions. Don't put it on `leaf` or team colours. Keep clear space equal to the big crater around it, and don't go below 16px for the mark.
 - The rock can tumble (rotate up to about ±20°) in playful moments, but stays upright in the nav bar and app icons.
 - Icons are Lucide: rounded 24px line icons with a 2px stroke, in the text colour. In SvelteKit use `lucide-svelte`; the ones the components use are in the Icons asset group. Use 18px icons in buttons and 16px in tags and small text.
+- When an icon leads a list row, menu link or card heading, put it in an Icon tile (`rb-icon-tile`): a 22px icon in a 40px round disc. If one row in a list has a tile, every row gets one.
 - An icon-only button always has an `aria-label`. Icons never replace a word where meaning matters: pair arrows with numbers and status icons with a short message.

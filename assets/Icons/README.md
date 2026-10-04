@@ -2,7 +2,7 @@ Ribuk uses Lucide icons: rounded 24px line icons drawn with a 2px stroke. These 
 
 - In SvelteKit, install `lucide-svelte` and import icons by name (`import { Trophy } from 'lucide-svelte'`), or paste the SVG files from this folder inline.
 - Icons take the text colour (`stroke="currentColor"`). Set them in `ink`, `leaf-ink`, `alert` or `paper` depending on the ground; never `highlight`. These previews show them in black.
-- Sizes: 24px on their own, 18px inside buttons, 16px inside tags and small text. Keep the 2px stroke at every size.
+- Sizes: 24px on their own, 22px inside an Icon tile (`rb-icon-tile`), 18px inside buttons, 16px inside tags and small text. Keep the 2px stroke at every size.
 - An icon that carries meaning on its own (an icon-only button) needs an `aria-label` on the button. Decorative icons get `aria-hidden="true"`.
 - Copied from lucide-icons/lucide at commit 45b0e14, ISC License (Feather-derived icons: MIT).
 
