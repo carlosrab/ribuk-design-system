@@ -1,5 +1,5 @@
 {
   "permissions": {
-    "allow": ["mcp__Linear"]
+    "allow": ["mcp__Linear", "mcp__claude_ai_Linear"]
   }
 }
