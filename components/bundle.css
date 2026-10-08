@@ -692,7 +692,7 @@ button.rb-vote:hover { border-color: var(--ink); }
    with data-panel-local; their alerts, stat tiles and controls keep the ordinary token pairs. */
 .rb-surface--dark { background: var(--panel); color: var(--panel-text); }
 :is(.rb-card--dark, .rb-surface--dark) .rb-card__meta:not(:where([data-panel-local] *)) { color: var(--panel-muted); }
-:is(.rb-card--dark, .rb-surface--dark) a:not(.rb-btn):not(:where([data-panel-local] *)) { color: var(--panel-accent); }
+:is(.rb-card--dark, .rb-surface--dark) a:not(.rb-btn, .rb-tag, .rb-sticker):not(:where([data-panel-local] *)) { color: var(--panel-accent); }
 :is(.rb-card--dark, .rb-surface--dark) :focus-visible:not(:where([data-panel-local] *)) { outline-color: var(--panel-accent); }
 :is(.rb-card--dark, .rb-surface--dark) .rb-btn--secondary:not(:where([data-panel-local] *)) { border-color: var(--panel-text); color: var(--panel-text); }
 :is(.rb-card--dark, .rb-surface--dark) .rb-btn--quiet:not(:where([data-panel-local] *)) { color: var(--panel-accent); }
