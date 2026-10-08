@@ -1,5 +1,6 @@
 {
   "permissions": {
-    "allow": ["mcp__Linear", "mcp__claude_ai_Linear"]
+    "allow": ["mcp__Linear", "mcp__claude_ai_Linear"],
+    "deny": ["mcp__Linear__merge_diff", "mcp__claude_ai_Linear__merge_diff"]
   }
 }
