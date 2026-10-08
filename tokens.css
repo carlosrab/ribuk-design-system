@@ -24,6 +24,10 @@
   --ink: #111410;
   --ink-muted: #535a50;
   --paper-muted: #aab0a4;
+  --panel: #111410;
+  --panel-text: #fbfbf7;
+  --panel-muted: #aab0a4;
+  --panel-accent: #1fa64a;
   --leaf: #1fa64a;
   --on-leaf: var(--ink);
   --leaf-ink: #167534;
@@ -51,6 +55,10 @@
   --ink: #eef0e8;
   --ink-muted: #a4ab9f;
   --paper-muted: #4d544a;
+  --panel: #2c302a;
+  --panel-text: #eef0e8;
+  --panel-muted: #b5bcaf;
+  --panel-accent: #6bd385;
   --leaf: #1fa64a;
   --on-leaf: var(--paper);
   --leaf-ink: #6bd385;
@@ -79,6 +87,10 @@
     --ink: #eef0e8;
     --ink-muted: #a4ab9f;
     --paper-muted: #4d544a;
+    --panel: #2c302a;
+    --panel-text: #eef0e8;
+    --panel-muted: #b5bcaf;
+    --panel-accent: #6bd385;
     --leaf: #1fa64a;
     --on-leaf: var(--paper);
     --leaf-ink: #6bd385;
