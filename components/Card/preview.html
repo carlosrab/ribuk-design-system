@@ -1,4 +1,4 @@
-<!-- @dsCard group="Layout" height=428 -->
+<!-- @dsCard group="Layout" height=620 -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -45,6 +45,30 @@
       <button class="rb-btn rb-btn--primary" type="button">Sign up</button>
       <button class="rb-btn rb-btn--secondary" type="button">Rules</button>
     </div>
+  </article>
+  <article class="rb-card rb-card--dark">
+    <h3 class="rb-card__title">Game day is on</h3>
+    <p class="rb-card__meta">A dark panel in both themes.</p>
+    <p class="rb-card__body">Two games left. <a href="#rules">Read the rules</a>.</p>
+    <div class="rb-card__actions"><a class="rb-tag" href="#team">Your team</a><a class="rb-sticker" href="#award">Award</a></div>
+    <div class="rb-progress" role="progressbar" aria-label="Games played" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" style="--value:60%">
+      <div class="rb-progress__head"><span class="rb-progress__label">Games played</span><span class="rb-progress__value">3 of 5</span></div>
+      <div class="rb-progress__track"><div class="rb-progress__bar"></div></div>
+    </div>
+    <div class="rb-card__actions">
+      <button class="rb-btn rb-btn--primary" type="button">Continue</button>
+      <button class="rb-btn rb-btn--secondary" type="button">Rules</button>
+      <button class="rb-btn rb-btn--secondary" type="button" disabled>Waiting</button>
+      <button class="rb-btn rb-btn--quiet rb-btn--icon" type="button" aria-label="More options">···</button>
+    </div>
+    <div class="rb-alert rb-alert--error" data-panel-local role="alert"><div class="rb-alert__content">
+      <p class="rb-alert__title">Couldn't save</p><p class="rb-alert__text">Try again when connected.</p>
+      <div class="rb-progress" role="progressbar" aria-label="Retry progress" aria-valuenow="1" aria-valuemin="0" aria-valuemax="2" style="--value:50%">
+        <div class="rb-progress__head"><span class="rb-progress__label">Retry progress</span><span class="rb-progress__value">1 of 2</span></div>
+        <div class="rb-progress__track"><div class="rb-progress__bar"></div></div>
+      </div>
+      <div class="rb-alert__actions"><button class="rb-btn rb-btn--secondary" type="button">Try again</button></div>
+    </div></div>
   </article>
 </div>
 </body>

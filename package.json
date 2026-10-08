@@ -1,6 +1,6 @@
 {
   "name": "@ribuk/design-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ribuk design system: tokens, component styles, fonts and brand assets.",
   "repository": {
     "type": "git",
@@ -23,5 +23,10 @@
     "./fonts/*": "./fonts/*",
     "./assets/*": "./assets/*",
     "./package.json": "./package.json"
+  },
+  "scripts": {
+    "tokens": "node scripts/tokens.mjs",
+    "check": "node scripts/tokens.mjs --check",
+    "test": "node --test"
   }
 }
